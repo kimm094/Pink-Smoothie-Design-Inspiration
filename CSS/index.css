@@ -1,0 +1,220 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-size:100%;
+    font-family: 'Roboto', sans-serif;
+    background: pink;
+    background:linear-gradient(to right,rgb(238, 41,74), white);
+}
+#main{
+        display: flex;
+        flex-direction:column;
+        height:90vh;
+        width:90vw;
+        background-color:white;
+        border-radius:3%;
+        margin:50px auto; 
+        position: relative; /*will be used for the content container*/
+}
+#header{
+    margin:30px;
+    background-color:transparent;
+}
+.top-nav {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between; 
+     /*pushes title and links as far to the edge as possible*/  
+    background:transparent; 
+}
+.title {
+    margin:20px 10px;
+    cursor: pointer;
+}
+h3.brand-heading{
+    font-size:20px;
+    font-family:'Roboto', sans-serif;
+    color:pink;
+    text-transform:capitalize;
+    margin-top: 2px;
+}
+.title-underline {
+    width:50px;
+    border:2px solid pink;
+    transition: width 4s ease, border 4s ease;
+}
+.title:hover .title-underline {
+    width: 150px;
+    border: 3px solid pink;
+}
+.top-nav ul li{
+    padding:5px;
+     list-style-type:none;
+     display: inline;
+}
+ul.links li a{
+    font-family:'Roboto', sans-serif;
+    text-decoration:none;
+    color:black;
+    font-size:14px;
+    display:inline-block;
+    background: transparent;
+    text-decoration: none;
+    padding:10px;
+    margin-top:20px;
+    transition: color 0.5s ease, background 0.5s ease, padding 0.5s ease;
+}
+ul.links li a:hover{
+        color:#f5f5f5;
+        padding-left:60px;
+        background:yellow;
+}
+
+
+/**************************CONTENT CONTAINER****************************/
+#content-container{
+    height:50%;
+    width:100%;
+    margin:5px;
+    padding:10px;
+    display: flex;
+    justify-content:space-between;
+}
+
+/******************Main Text********************/
+#main-image{
+      padding-left:100px;
+      display: grid;
+      grid-template-columns:repeat(1, 1fr);
+      grid-gap:5px;
+}
+#main-image .outer-img, .inner-img{
+    border-radius:50%;
+    padding:50px;
+    background: transparent;
+}
+#main-image .outer-img{
+    position:relative;
+}
+#main-image img.inner-img {
+    position: absolute; 
+    top:100;
+    left:100; 
+    z-index:2;
+    width:250px;
+    height:250px;
+}
+.box{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+    position: absolute;
+    z-index:1;
+    background:linear-gradient(to right,rgb(238, 41,74), white);
+}
+.smallbox{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background:linear-gradient(to right,rgb(238, 41,74), white);
+    position: absolute;
+    left:300;
+    top:50;
+    z-index:0;
+}
+
+/******************Main Text********************/
+ #main-text{
+   margin-right:100px;
+    padding:10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns:repeat(1, 1fr);
+}
+#main-text h3{
+    font-size:15px;
+    color:pink;
+    font-family:sans-serif;
+    margin-top:10px;
+}
+#main-text h1{
+    font-size:22px;
+    color:black;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-top:10px;
+}
+#main-text p{
+    font-size:13px;
+    color:#2b2727;
+    margin-top:10px;
+}
+#table{
+    width:50%;
+    margin-top:5px;
+}
+#table tr th{
+    padding:20px 10px;
+    font-size:15px;
+}
+#table tr td{
+    text-transform: capitalize;
+    font-size:10px;
+}
+#table tr td img{
+    width:50px;
+    padding:2px;
+    height:50px;
+    border-radius:50%;
+   background:linear-gradient(to right,rgb(238, 41,74), white);
+
+}
+#table td .a{
+    padding-right:5px;
+    font-size:20px;
+    color:rgb(238, 41, 74);
+}
+button{
+    border-radius:50px; 
+    width:200px;
+    height:50px;
+    background-color:rgb(238, 41,74);
+    color:white;
+    border:1px solid rgb(238, 41,74);   
+    margin-top:20px; 
+}
+.left-arrow {
+    display: flex;
+    justify-content: center;
+    background: rgb(238, 41, 74);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index:3;
+    top:200px;
+    right:30px;
+}
+.left-arrow .c {
+    align-self: center;
+}
+.right-arrow{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(238, 41, 74);
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    position:absolute;
+    /* z-index:4; */
+    top:300px;
+    right:10px; 
+}
+.right-arrow .d{
+    align-self: center;
+}
+
+
